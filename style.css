@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  overflow-x: hidden;
+}
+.brain-img{
+  height: 100px;
+  width: 50px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 0 4.8rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #262626;
+}
+
+.header .logo {
+  height: 20rem;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #484848;
+  transition: all 0.3s;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: #ffff;
+}
+
+.mobile-navbar-btn {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.mobile-nav-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #ffff;
+}
+
+.mobile-nav-icon[name="close-circle-outline"] {
+  display: none;
+}
+
+#ideathon {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background: #262626;
+  height: 100vh;
+  width: 100vw;
+}
+
+.ideathon-ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  margin-top: 25rem;
+}
+
+.ideathon-li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8rem;
+  letter-spacing: 15px;
+  color: #484848;
+  text-shadow: none;
+  animation: animate 1s infinite linear;
+}
+
+.ideathon-subheader {
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #484848;
+  letter-spacing: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.ideathon-subheader span {
+  transition: 0.5s;
+}
+
+.ideathon-subheader span:hover {
+  color: #fff;
+  /* text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff; */
+}
+
+.section-about {
+  background-color: #ff6c00;
+  height: 100vh;
+  font-size: 3.2rem;
+  padding: 9.6rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-participate {
+  background-color: #92dce5;
+  height: 100vh;
+  font-size: 3.2rem;
+  padding: 9.6rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-gallery {
+  background-color: #f7ec59;
+  height: 100vh;
+  font-size: 3.2rem;
+  padding: 9.6rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-contact {
+  background-color: #f8f7f9;
+  height: 100vh;
+  font-size: 3.2rem;
+  padding: 9.6rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes animate {
+  0% {
+    color: #484848;
+    text-shadow: none;
+  }
+
+  18% {
+    color: #484848;
+    text-shadow: none;
+  }
+  20% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+  }
+  30% {
+    color: #484848;
+    text-shadow: none;
+  }
+  35% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+  }
+  70% {
+    color: #484848;
+    text-shadow: none;
+  }
+  85% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #484848;
+    text-shadow: none;
+  }
+}
+
+.ideathon-li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.ideathon-li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.ideathon-li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.ideathon-li:nth-child(4) {
+  animation-delay: 0.7s;
+}
+.ideathon-li:nth-child(5) {
+  animation-delay: 1s;
+}
+.ideathon-li:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.ideathon-li:nth-child(7) {
+  animation-delay: 1.4s;
+}
+.ideathon-li:nth-child(8) {
+  animation-delay: 1.6s;
+}
+.ideathon-li:nth-child(9) {
+  animation-delay: 1.8s;
+}
+
+/* ===========================================
+Responsive Codes 
+======================================= */
+
+/* 980px  */
+@media (max-width: 62em) {
+  .mobile-navbar-btn {
+    display: block;
+    z-index: 999;
+    color: #ffff;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header .logo {
+    width: 40%;
+  }
+
+  .ideathon-li{
+    font-size: 4em;
+
+  }
+  .ideathon-ul{
+    margin-top: 23rem;
+  }
+
+  .ideathon-subheader{
+    font-size: 1.3rem;
+    padding-inline: 1.5rem;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+  }
+
+  .navbar {
+    /* display: none; */
+    width: 100%;
+    height: 100vh;
+    background: #262626;
+    color:#484848;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to get the tranisition  */
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="close-circle-outline"] {
+    display: block;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+}
+
+/* Below 560px  */
+@media (max-width: 35em) {
+  .header {
+    padding: 0 2.4rem;
+  }
+
+  .header .logo {
+    width: 60%;
+  }
+}
+
+
